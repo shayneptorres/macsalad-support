@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MacSalad — Privacy Policy</title>
+<meta name="description" content="Privacy policy for MacSalad. Health data stays on your iPhone; only meal descriptions you ask Claude to estimate, and food look-ups, leave it.">
+<meta name="theme-color" content="#FFF6EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110F" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <header>
+    <a href="./">
+      <img class="mark" src="assets/icon-256.png" srcset="assets/icon-256.png 1x, assets/icon-512.png 2x"
+           width="88" height="88" alt="MacSalad — back to support">
+    </a>
+    <h1>Privacy Policy</h1>
+    <p class="tagline">MacSalad · Last updated September 29, 2026</p>
+    <nav aria-label="Sections">
+      <a href="./">Support home</a>
+      <a href="./#faq">Common questions</a>
+    </nav>
+  </header>
+
+  <h2>The short version</h2>
+  <div class="card">
+    <ul>
+      <li>There is no MacSalad account, and no ads, analytics, tracking or
+        third-party SDKs in the app. Your data is never sold.</li>
+      <li>Your Apple Health data never leaves your iPhone through MacSalad.</li>
+      <li>Your food diary syncs through <strong>your own</strong> private iCloud
+        database. I (the developer) have no copy of it and can’t see it.</li>
+      <li>Two things leave your phone: the text of a meal you ask Claude to
+        estimate (through MacSalad’s server to Anthropic), and barcode or food
+        look-ups (to Open Food Facts).</li>
+      <li>MacSalad’s server does not store or log your meal text.</li>
+    </ul>
+  </div>
+
+  <h2>Who is responsible</h2>
+  <div class="card">
+    <p>
+      MacSalad is made by Shayne Torres, an independent developer. Questions
+      about this policy go to
+      <a href="mailto:shayneptorres@gmail.com?subject=MacSalad%20Privacy">shayneptorres@gmail.com</a>.
+    </p>
+  </div>
+
+  <h2>What the app works with</h2>
+  <div class="card">
+    <p>To do its job, MacSalad handles:</p>
+    <ul>
+      <li><strong>Your food diary</strong> — meals, foods, recipes, your goals,
+        weekly schedule and flex days.</li>
+      <li><strong>Meal descriptions</strong> — what you type or say when you
+        describe a meal. Dictation is transcribed on your iPhone by Apple’s
+        on-device speech recognition.</li>
+      <li><strong>Camera images</strong> — barcodes and nutrition labels you
+        scan. The barcode number is read on your iPhone, and label photos are
+        read by Apple’s on-device model; the images themselves are not uploaded
+        by MacSalad.</li>
+      <li><strong>Apple Health data</strong>, with your permission — see
+        <a href="#health">Apple Health</a> below.</li>
+      <li><strong>Goal set-up answers</strong> — age, sex, height, weight and
+        how active your week is, if you use the guided goals.</li>
+    </ul>
+    <p>
+      None of this is collected by me. It lives on your iPhone and, for the
+      diary, in your own iCloud.
+    </p>
+  </div>
+
+  <h2>What stays on your device</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Apple Health data.</strong> Everything MacSalad reads from or
+        writes to Health.</li>
+      <li><strong>Goal set-up answers.</strong> The calculator runs on your
+        iPhone, and your answers are stored only on your iPhone — not in
+        iCloud and never sent anywhere.</li>
+      <li><strong>Drafts</strong> of meals you haven’t finished checking, a
+        record of which meals have been written to Health, and your app
+        settings.</li>
+      <li><strong>On-device estimates.</strong> When a meal is estimated on your
+        iPhone (the built-in portion table, or Apple’s on-device model), nothing
+        about it leaves your phone.</li>
+    </ul>
+    <p class="muted small">
+      Like most apps’ data, this is included in your iPhone’s own backups
+      (iCloud Backup, or a backup to your computer), which are under your
+      control and governed by Apple.
+    </p>
+  </div>
+
+  <h2>What leaves your device, and where it goes</h2>
+  <div class="card">
+    <h3>Meal descriptions, to Claude</h3>
+    <p>
+      When Claude estimates are switched on and you describe a meal, MacSalad
+      sends <strong>only the text of your description</strong>, your iPhone’s
+      language and region code (for example <code>en-US</code>, so the answer
+      comes back in the right units) and the time of the request to MacSalad’s
+      server. The server passes the text to Anthropic’s Claude, which returns
+      the estimate. No name, email, Apple ID, location, health data or diary is
+      sent.
+    </p>
+    <p>
+      To stop the service being abused and to apply a daily limit, each request
+      is signed using Apple’s App Attest: your iPhone generates an anonymous key
+      for this installation of the app, and Apple vouches that the request comes
+      from a genuine copy of MacSalad. That key identifies an installation, not
+      a person.
+    </p>
+    <p>
+      Anthropic processes the text under its
+      <a href="https://www.anthropic.com/legal/commercial-terms">Commercial Terms of Service</a>,
+      which state that “Anthropic may not train models on Customer Content from
+      Services.”
+    </p>
+    <p>
+      Claude estimates are currently offered in the TestFlight beta, where they
+      are on by default. You can switch them off at any time in
+      <strong>Settings → Developer → Estimate with Claude</strong>; MacSalad then
+      estimates on your iPhone instead, where your iPhone supports it.
+    </p>
+
+    <h3>Barcode and food look-ups, to Open Food Facts</h3>
+    <p>
+      When you scan a barcode, MacSalad sends the barcode number to
+      <a href="https://world.openfoodfacts.org">Open Food Facts</a>, a free public
+      food database, to fetch that product’s nutrition label. When you search
+      for a food by name, or tap to look up an estimated item, the search words
+      are sent to Open Food Facts’ search service. Nothing about you (no account, diary or health data) is attached.
+      Open Food Facts’ own privacy policy applies to those requests.
+    </p>
+
+    <h3>Your diary, to your iCloud</h3>
+    <p>
+      See <a href="#icloud">iCloud</a> below.
+    </p>
+
+    <h3>Things you choose to share</h3>
+    <p>
+      If you share a day, a meal or a recipe, it goes where you send it — Messages,
+      Mail, AirDrop and so on. A shared recipe contains its ingredients and their
+      nutrition only; a shared day contains the day’s totals and items, not your
+      notes, targets or Health data.
+    </p>
+
+    <h3>The optional Siri shortcut</h3>
+    <p>
+      If you install the optional “Log Food” shortcut, it runs in Apple’s
+      Shortcuts app and uses Apple’s cloud model, so the meal you describe to it
+      is sent to Apple’s Private Cloud Compute under Apple’s privacy terms. The
+      app says so where it offers the shortcut. Nothing is saved until you tap
+      Save.
+    </p>
+  </div>
+
+  <h2>What MacSalad’s server keeps, and for how long</h2>
+  <div class="card">
+    <p>
+      The server is a small service hosted on Cloudflare. It is there only to
+      pass meal descriptions to Claude safely and within a budget.
+    </p>
+    <ul>
+      <li><strong>Your meal text is never stored and never logged.</strong> It
+        is held in memory only for the few seconds it takes to get an estimate.</li>
+      <li>For each request it writes a log line with technical details only:
+        the <em>length</em> of the text, how long the estimate took, its cost,
+        the model and prompt version, token and item counts, the language and
+        region code, and whether it succeeded. No text, no key and no
+        identifier. These lines are not kept: the service is configured without
+        log storage, so they can only be seen live as they happen.</li>
+      <li>For each app installation it keeps the anonymous App Attest public key
+        with Apple’s attestation receipt, a signature counter, when it was
+        registered, and a count of today’s estimates with the time of the last
+        one. The day’s count resets daily; the key is kept while the service
+        runs, so the installation doesn’t have to register again.</li>
+      <li>Service-wide, it keeps one running total of this month’s spending, and
+        short-lived one-time codes used when an installation registers, which
+        are deleted when used or after five minutes.</li>
+    </ul>
+    <p class="muted small">
+      Cloudflare, as the host, handles the network connection (including your
+      IP address) to deliver requests, under its own privacy policy. MacSalad’s
+      server code does not read or record IP addresses.
+    </p>
+  </div>
+
+  <h2 id="health">Apple Health</h2>
+  <div class="card">
+    <p>With your permission, MacSalad:</p>
+    <ul>
+      <li><strong>writes</strong> dietary energy, protein, carbohydrate, fat,
+        saturated fat, fibre, sugar, sodium, cholesterol and water for the meals
+        you log, and reads those back to confirm what arrived;</li>
+      <li><strong>reads</strong> your workouts (with their active energy and
+        distance) to show them on Today;</li>
+      <li><strong>reads</strong> your weight, height, date of birth, sex and
+        step count only when you tap <strong>Fill from Health</strong> in the goal
+        set-up. It never writes these.</li>
+    </ul>
+    <p>
+      Health data is used only to provide these features. It is not sent to
+      MacSalad’s server, to Anthropic, to Open Food Facts or to anyone else; it
+      is not stored in iCloud by MacSalad; and it is never used for advertising
+      or sold. The Apple Watch app reads your nutrition from Health on the watch
+      and never writes to it. You can change or withdraw these permissions at
+      any time in the Health app or in iOS Settings → Health.
+    </p>
+  </div>
+
+  <h2 id="icloud">iCloud</h2>
+  <div class="card">
+    <p>
+      Your meals, foods, recipes, goals, weekly schedule and flex days sync
+      between your devices through Apple’s CloudKit, in the
+      <strong>private</strong> database of your own iCloud account — the same way
+      Notes or Reminders do. That data is stored by Apple under your account and
+      Apple’s privacy policy. I have no access to it, and there is no MacSalad
+      server copy. If iCloud is off for MacSalad, your diary stays on this
+      iPhone.
+    </p>
+  </div>
+
+  <h2>No ads, no tracking, no selling</h2>
+  <div class="card">
+    <p>
+      MacSalad contains no advertising, no analytics or crash-reporting SDKs and
+      no third-party tracking code, and it does not track you across other apps
+      or websites. Your data is never sold, rented or shared for marketing.
+    </p>
+    <p class="muted small">
+      If you choose to share diagnostics with app developers in iOS Settings,
+      Apple may provide me with anonymous crash reports, which I use only to fix
+      bugs. TestFlight feedback you send is delivered to me by Apple, including
+      any screenshot and note you attach.
+    </p>
+  </div>
+
+  <h2>Children</h2>
+  <div class="card">
+    <p>
+      MacSalad is not intended for children under 13, and I do not knowingly
+      receive personal information from them. The guided goal calculator will
+      not suggest calorie targets for anyone under 18. If you believe a child
+      has used the app to send information, email me and I’ll help.
+    </p>
+  </div>
+
+  <h2>Your choices</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Turn off Claude estimates</strong> in Settings → Developer →
+        Estimate with Claude (in the beta). Nothing is sent to Anthropic
+        afterwards.</li>
+      <li><strong>Don’t scan or search</strong> if you’d rather nothing go to
+        Open Food Facts; you can enter any food by hand.</li>
+      <li><strong>Limit Apple Health access</strong> in the Health app or iOS
+        Settings → Health. MacSalad works without it.</li>
+      <li><strong>Turn off iCloud</strong> for MacSalad in iOS Settings to keep
+        your diary on this iPhone only.</li>
+      <li><strong>Delete your data:</strong> swipe away today’s meals; delete the
+        app to remove everything on this iPhone; delete MacSalad’s iCloud data
+        from your iCloud storage settings; and delete its Health data in the
+        Health app (your profile → Apps → MacSalad).</li>
+    </ul>
+    <p class="muted small">
+      Because MacSalad’s server stores no meal text and nothing that identifies
+      you, there is nothing on it that I can look up or hand over for you. The
+      anonymous installation record described above cannot be linked to you by
+      me.
+    </p>
+  </div>
+
+  <h2>Changes and contact</h2>
+  <div class="card">
+    <p>
+      If this policy changes — for example, if Claude estimates come to the App
+      Store version — the updated version will be posted on this page with a new
+      “last updated” date. Questions about privacy? Email
+      <a href="mailto:shayneptorres@gmail.com?subject=MacSalad%20Privacy">shayneptorres@gmail.com</a>.
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2026 Shayne Torres</p>
+    <p><a href="./">MacSalad support</a></p>
+  </footer>
+
+</main>
+</body>
+</html>

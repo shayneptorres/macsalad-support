@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MacSalad — Support</title>
+<meta name="description" content="Support, FAQ and privacy for MacSalad, an iPhone food diary: tell it what you ate and it logs the calories and macros to Apple Health.">
+<meta name="theme-color" content="#FFF6EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110F" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <header>
+    <img class="mark" src="assets/icon-256.png" srcset="assets/icon-256.png 1x, assets/icon-512.png 2x"
+         width="88" height="88" alt="MacSalad app icon">
+    <h1>MacSalad</h1>
+    <p class="tagline">Tell it what you ate. It does the math and logs the macros to Apple Health.</p>
+    <ul class="macros" aria-hidden="true">
+      <li><span class="dot-protein"></span>Protein</li>
+      <li><span class="dot-carbs"></span>Carbs</li>
+      <li><span class="dot-fat"></span>Fat</li>
+    </ul>
+
+    <!-- TODO(owner): replace this placeholder with Apple's official
+         "Download on the App Store" badge linking to the apps.apple.com URL
+         once the app is live. -->
+    <span class="store-badge">In beta on TestFlight · Coming to the App Store</span>
+
+    <nav aria-label="Sections">
+      <a href="#help">Get help</a>
+      <a href="#faq">Common questions</a>
+      <a href="#beta">Beta testers</a>
+      <a href="privacy.html">Privacy policy</a>
+    </nav>
+  </header>
+
+  <h2 id="about">What it is</h2>
+  <div class="card">
+    <p>
+      MacSalad is a food diary that does the math for you. Type or say what you
+      ate — “two eggs and toast with butter” — scan a barcode, or photograph a
+      nutrition label, and it works out the calories, protein, carbs and fat.
+      You check the numbers before anything is saved, and everything you log is
+      written to Apple Health alongside your steps and workouts.
+    </p>
+    <p class="muted small">
+      For iPhone, iOS 27 or later, with an Apple Watch app. No MacSalad account,
+      nothing to sign in to, no ads and no tracking. Your diary syncs through
+      your own iCloud.
+    </p>
+  </div>
+
+  <h2 id="features">Features</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Describe it.</strong> Type or dictate a meal in plain words and
+        get each food with its calories and macros, ready to check. In the beta,
+        <strong>Order Up</strong> lists each food as you say it.</li>
+      <li><strong>Scan it.</strong> Scan a barcode to look the product up in Open
+        Food Facts, or photograph the nutrition label when there is no barcode.</li>
+      <li><strong>Pick it.</strong> Save foods and recipes to your library, and
+        tap your usual items for this time of day to add them again.</li>
+      <li><strong>Apple Health.</strong> Calories, protein, carbs, fat and
+        related nutrients go into Apple Health as you log them. Today also shows
+        your workouts from Health for context.</li>
+      <li><strong>Guided goals.</strong> Answer a few quick questions and MacSalad
+        suggests calories and macros, with a line on why each number is what it
+        is and the full arithmetic if you want it. Or type your own.</li>
+      <li><strong>A weekly schedule and flex days.</strong> Give some days more
+        than others while the week stays the same, and set aside flex days that
+        are logged as usual but not scored.</li>
+      <li><strong>Trends and a daily recap.</strong> After a few days, Trends
+        shows your averages and how often you landed on your goal. A short recap
+        of yesterday appears once a day, and can be turned off.</li>
+      <li><strong>Widgets, Siri and Apple Watch.</strong> Calorie and macro
+        widgets for the Home and Lock Screens, Shortcuts actions for logging by
+        voice, and a watch app that shows your day.</li>
+    </ul>
+  </div>
+
+  <h2 id="estimates">How the estimating works</h2>
+  <div class="card">
+    <p>
+      When you describe a meal, MacSalad breaks it into foods and estimates each
+      one. Common counted foods (“two eggs”) come from a table of portions built
+      into the app. Everything else is estimated by a language model: in the
+      beta, Anthropic’s Claude when you are online and it is switched on, or
+      Apple’s on-device model on iPhones that support Apple Intelligence.
+    </p>
+    <p class="callout">
+      <strong>An estimate is an estimate.</strong> Portion sizes, recipes and
+      restaurant dishes vary, and a model can be wrong. MacSalad always shows
+      every item and its numbers for you to check and edit before anything is
+      saved, and it flags a food where no portion was given. If the macros don’t
+      add up to the calories, it says so and offers a fix.
+    </p>
+    <p class="muted small">
+      Scanned products come from Open Food Facts, a free, community-built
+      database. Its data is only as good as the entry for that product, so it is
+      worth a glance too.
+    </p>
+  </div>
+
+  <h2 id="help">Get help</h2>
+  <div class="card">
+    <p style="margin:0">
+      Questions, bugs, or an estimate that came out badly wrong? Email me
+      directly — I read everything.
+    </p>
+    <a class="contact" href="mailto:shayneptorres@gmail.com?subject=MacSalad%20Support">
+      shayneptorres@gmail.com
+    </a>
+    <p style="margin:.9rem 0 0" class="small muted">
+      When reporting a bug, it helps to include your iPhone model, iOS version,
+      and what you were doing when it happened. For a bad estimate, tell me
+      exactly what you typed or said.
+    </p>
+  </div>
+
+  <h2 id="faq">Common questions</h2>
+  <div class="card">
+
+    <details>
+      <summary>Is my health data uploaded anywhere?</summary>
+      <p>
+        No. What MacSalad writes to and reads from Apple Health stays on your
+        iPhone — the app never sends Health data to me, to Anthropic or to
+        anyone else. The answers you give in the goal set-up (age, height,
+        weight and so on) are worked out on your iPhone and stored there. Your
+        diary syncs through your own private iCloud, which I can’t see. The full
+        detail is in the <a href="privacy.html">privacy policy</a>.
+      </p>
+    </details>
+
+    <details>
+      <summary>What gets sent to Claude?</summary>
+      <p>
+        Only the words of the meal you described, plus your iPhone’s language
+        and region setting so the answer comes back in the right units. No name,
+        no account and no health data. It goes through MacSalad’s own small
+        server, which does not store or log the text, on to Anthropic. Under
+        Anthropic’s commercial terms, Anthropic may not train its models on it.
+        In the beta you can switch Claude off in <strong>Settings → Developer →
+        Estimate with Claude</strong>.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does it work offline?</summary>
+      <p>
+        Mostly. Your diary, library, goals and Trends all work without a
+        connection, and iCloud catches up when you are back online. Describing
+        a meal offline uses the built-in portion table and, on iPhones that
+        support Apple Intelligence, Apple’s on-device model. Barcode look-ups
+        and food searches need the internet, because they ask Open Food Facts.
+      </p>
+    </details>
+
+    <details>
+      <summary>Why does it need Apple Health?</summary>
+      <p>
+        Apple Health is where your nutrition ends up, so it sits beside your
+        steps, workouts and anything else you track. MacSalad asks for
+        permission to <strong>write</strong> calories, protein, carbs, fat and
+        related nutrients, and to read them back so it can check what arrived.
+        It reads workouts to show them on Today, and reads your height, weight,
+        age, sex and steps only when you tap <strong>Fill from Health</strong>
+        in the goal set-up. You can use MacSalad without Health; your meals are
+        simply not sent there.
+      </p>
+    </details>
+
+    <details>
+      <summary>How are my calorie and macro goals worked out?</summary>
+      <p>
+        Resting energy uses the Mifflin-St Jeor equation. A typical day adds an
+        activity factor (from the FAO/WHO/UNU 2004 report), then walks and
+        workouts are added using the Compendium of Physical Activities. Your
+        goal — lose fat, lose fat and build muscle, maintain, or build muscle —
+        adjusts the total, and protein is set per kilogram of body weight (1.6
+        or 2.0 g/kg) with fat and carbs sharing the rest. The app shows every
+        step under <strong>How we got here</strong>, and you can change any
+        number it suggests.
+      </p>
+    </details>
+
+    <details>
+      <summary>Is this medical advice?</summary>
+      <p>
+        No. In the app’s own words: “This is not medical advice. A general
+        estimate does not account for pregnancy or breastfeeding, medical
+        conditions, medication that affects appetite or weight, or a history of
+        disordered eating. Talk to your primary care provider before making
+        changes to how you eat.” The guided calculator won’t suggest targets for
+        anyone under 18.
+      </p>
+    </details>
+
+    <details>
+      <summary>What are flex days?</summary>
+      <p>
+        Days you set aside — a birthday, a trip, a long dinner. A flex day is
+        logged and sent to Apple Health as usual, but it isn’t scored: Trends,
+        streaks and the recap leave it out. Mark today as flex from the sparkles
+        button on Today, or a day up to a week back from that day’s page. You
+        choose how many you get a month on the Goals page; it starts at 4.
+      </p>
+    </details>
+
+    <details>
+      <summary>Can I give some days a bigger goal than others?</summary>
+      <p>
+        Yes. In <strong>Settings → Your goals → By day</strong>, spread the same
+        week differently — more at the weekend, a little less on the other days.
+        The week’s total stays the same, and Today names the day’s goal when it
+        differs.
+      </p>
+    </details>
+
+    <details>
+      <summary>Why can’t I edit a meal from an earlier day?</summary>
+      <p>
+        On purpose. Past days stay as they were logged, so your Apple Health
+        history doesn’t shift underneath you. Today’s meals can be edited or
+        deleted at any time.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I delete my data?</summary>
+      <ul>
+        <li><strong>A meal from today:</strong> swipe it away on Today. It is
+          removed from Apple Health too.</li>
+        <li><strong>Everything on this iPhone:</strong> delete the app.</li>
+        <li><strong>Your synced diary:</strong> in iOS Settings, tap your name →
+          iCloud → manage your storage, and delete MacSalad’s data. (The exact
+          wording varies between iOS versions.)</li>
+        <li><strong>What’s in Apple Health:</strong> in the Health app, open your
+          profile → Apps → MacSalad, and delete its data.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Is there a Pro version?</summary>
+      <p>
+        Not yet. Everything is free while MacSalad is in beta. Any paid option
+        will be announced here and in the app before it arrives.
+      </p>
+    </details>
+
+    <details>
+      <summary>How do I send feedback?</summary>
+      <p>
+        Email <a href="mailto:shayneptorres@gmail.com?subject=MacSalad%20Feedback">shayneptorres@gmail.com</a>
+        any time. If you are testing the beta, the quickest way is from
+        TestFlight — see <a href="#beta">below</a>.
+      </p>
+    </details>
+
+  </div>
+
+  <h2 id="beta">Beta testers</h2>
+  <div class="card">
+    <p>Thank you for testing. Two ways to send feedback straight to me:</p>
+    <ol>
+      <li><strong>From a screenshot.</strong> Take a screenshot in MacSalad, tap
+        its preview, then tap <strong>Share Beta Feedback</strong>. Add a note
+        about what you expected.</li>
+      <li><strong>From TestFlight.</strong> Open the TestFlight app, tap
+        MacSalad, then <strong>Send Beta Feedback</strong>.</li>
+    </ol>
+    <p class="muted small">
+      Both are described again in MacSalad under <strong>Settings → Beta
+      Feedback</strong>. If an estimate looks wrong, please include exactly what
+      you typed or said.
+    </p>
+  </div>
+
+  <h2 id="privacy">Privacy</h2>
+  <div class="card">
+    <p>
+      No MacSalad account, no ads, no analytics and no tracking. Your Apple
+      Health data never leaves your iPhone through MacSalad, and your diary
+      syncs through your own iCloud. Beyond that, MacSalad sends two things off
+      your phone: a meal description you ask Claude to estimate, and barcode or
+      food look-ups to Open Food Facts.
+    </p>
+    <p><a href="privacy.html">Read the full privacy policy</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 Shayne Torres</p>
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
