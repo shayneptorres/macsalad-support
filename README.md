@@ -17,8 +17,8 @@ Both URLs must stay reachable. Apple checks them during review.
 Plain HTML plus `style.css` — no build step, no dependencies, no external
 resources. Edit and push; GitHub Pages redeploys in about a minute.
 
-When the app's data handling changes (for example, Claude estimates reaching
-the App Store build), update `privacy.html` and its "Last updated" date.
+When the app's data handling changes (for example, online Sous Chef estimates
+reaching the App Store build), update `privacy.html` and its "Last updated" date.
 
 ## Setup
 

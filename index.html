@@ -87,9 +87,10 @@
     <p>
       When you describe a meal, MacSalad breaks it into foods and estimates each
       one. Common counted foods (“two eggs”) come from a table of portions built
-      into the app. Everything else is estimated by a language model: in the
-      beta, Anthropic’s Claude when you are online and it is switched on, or
-      Apple’s on-device model on iPhones that support Apple Intelligence.
+      into the app. Everything else is estimated by <strong>Sous Chef</strong>,
+      MacSalad’s AI. Sous Chef works online when you are connected and it is
+      switched on, or right on your iPhone with Apple’s on-device model on
+      iPhones that support Apple Intelligence.
     </p>
     <p class="callout">
       <strong>An estimate is an estimate.</strong> Portion sizes, recipes and
@@ -128,7 +129,7 @@
       <summary>Is my health data uploaded anywhere?</summary>
       <p>
         No. What MacSalad writes to and reads from Apple Health stays on your
-        iPhone — the app never sends Health data to me, to Anthropic or to
+        iPhone — the app never sends Health data to me, to Sous Chef or to
         anyone else. The answers you give in the goal set-up (age, height,
         weight and so on) are worked out on your iPhone and stored there. Your
         diary syncs through your own private iCloud, which I can’t see. The full
@@ -137,15 +138,17 @@
     </details>
 
     <details>
-      <summary>What gets sent to Claude?</summary>
+      <summary>What does Sous Chef send when it estimates online?</summary>
       <p>
         Only the words of the meal you described, plus your iPhone’s language
         and region setting so the answer comes back in the right units. No name,
         no account and no health data. It goes through MacSalad’s own small
-        server, which does not store or log the text, on to Anthropic. Under
-        Anthropic’s commercial terms, Anthropic may not train its models on it.
-        In the beta you can switch Claude off in <strong>Settings → Developer →
-        Estimate with Claude</strong>.
+        server, which does not store or log the text, to the AI service that
+        makes the estimate, and that service may not train its models on it.
+        When Sous Chef estimates on your iPhone instead, nothing is sent at all.
+        You can turn online estimates off in Settings, under Sous Chef. The
+        <a href="privacy.html">privacy policy</a> names the service and has the
+        full detail.
       </p>
     </details>
 
@@ -286,7 +289,7 @@
       No MacSalad account, no ads, no analytics and no tracking. Your Apple
       Health data never leaves your iPhone through MacSalad, and your diary
       syncs through your own iCloud. Beyond that, MacSalad sends two things off
-      your phone: a meal description you ask Claude to estimate, and barcode or
+      your phone: a meal description you ask Sous Chef to estimate online, and barcode or
       food look-ups to Open Food Facts.
     </p>
     <p><a href="privacy.html">Read the full privacy policy</a></p>
