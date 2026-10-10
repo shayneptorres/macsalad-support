@@ -107,7 +107,7 @@ li + li { margin-top: .3rem; }
   font-weight: 600;
 }
 
-/* The macro dots in the hero, echoing the icon's three shapes. */
+/* The macro dots in the hero, in the app's protein, carbs and fat colours. */
 .macros {
   display: flex; justify-content: center; gap: 1.1rem;
   margin: .9rem 0 0; padding: 0; list-style: none;
