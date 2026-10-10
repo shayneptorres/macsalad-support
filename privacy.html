@@ -20,7 +20,7 @@
            width="88" height="88" alt="MacSalad — back to support">
     </a>
     <h1>Privacy Policy</h1>
-    <p class="tagline">MacSalad · Last updated September 29, 2026</p>
+    <p class="tagline">MacSalad · Last updated October 10, 2026</p>
     <nav aria-label="Sections">
       <a href="./">Support home</a>
       <a href="./#faq">Common questions</a>
@@ -70,7 +70,10 @@
       <li><strong>Apple Health data</strong>, with your permission — see
         <a href="#health">Apple Health</a> below.</li>
       <li><strong>Goal set-up answers</strong> — age, sex, height, weight and
-        how active your week is, if you use the guided goals.</li>
+        how active your week is, if you use the guided goals, and a weight or
+        body fat goal if you set one.</li>
+      <li><strong>Sous Chef chats</strong> — what you say to Sous Chef in its
+        chat, and its replies, if you turn the chat on.</li>
     </ul>
     <p>
       None of this is collected by me. It lives on your iPhone and, for the
@@ -83,9 +86,15 @@
     <ul>
       <li><strong>Apple Health data.</strong> Everything MacSalad reads from or
         writes to Health.</li>
-      <li><strong>Goal set-up answers.</strong> The calculator runs on your
-        iPhone, and your answers are stored only on your iPhone — not in
-        iCloud and never sent anywhere.</li>
+      <li><strong>Goal set-up answers and body goals.</strong> The calculator
+        runs on your iPhone, and your answers, your weight goal and your body
+        fat goal are stored only on your iPhone — not in iCloud and never sent
+        anywhere.</li>
+      <li><strong>Sous Chef chats.</strong> Kept only on your iPhone, not in
+        iCloud, for 30 days unless you choose otherwise in Settings → Sous Chef.
+        Once a message has been answered it is never sent anywhere. (Asking
+        Sous Chef to add a food sends only that food’s words for an online
+        estimate, as described below, when online estimates are on.)</li>
       <li><strong>Drafts</strong> of meals you haven’t finished checking, a
         record of which meals have been written to Health, and your app
         settings.</li>
@@ -138,10 +147,10 @@
     </p>
     <p>
       Online Sous Chef estimates are currently offered in the TestFlight beta,
-      where they are on by default. You can switch them off at any time
-      in Settings (in the beta, under <strong>Developer → Sous Chef
-      estimates</strong>); Sous Chef then estimates on your iPhone instead, where
-      your iPhone supports it.
+      where they are on by default. The first time Sous Chef would go online,
+      the app asks you first. You can switch online estimates off at any time
+      in <strong>Settings → Sous Chef → Estimate online</strong>; Sous Chef then
+      estimates on your iPhone instead, where your iPhone supports it.
     </p>
 
     <h3>Barcode and food look-ups, to Open Food Facts</h3>
@@ -218,6 +227,8 @@
         you log, and reads those back to confirm what arrived;</li>
       <li><strong>reads</strong> your workouts (with their active energy and
         distance) to show them on Today;</li>
+      <li><strong>reads</strong> your weight and body fat percentage to show
+        them in the Body section of Trends, if you turn it on;</li>
       <li><strong>reads</strong> your weight, height, date of birth, sex and
         step count only when you tap <strong>Fill from Health</strong> in the goal
         set-up. It never writes these.</li>
@@ -226,8 +237,10 @@
       Health data is used only to provide these features. It is not sent to
       MacSalad’s server, to the AI service behind Sous Chef, to Open Food Facts or to anyone else; it
       is not stored in iCloud by MacSalad; and it is never used for advertising
-      or sold. The Apple Watch app reads your nutrition from Health on the watch
-      and never writes to it. You can change or withdraw these permissions at
+      or sold. The Apple Watch app and its complications read your nutrition
+      from Health on the watch and never write to it; the only thing your
+      iPhone sends the watch is your calorie and macro goals, directly between
+      your own devices. You can change or withdraw these permissions at
       any time in the Health app or in iOS Settings → Health.
     </p>
   </div>
@@ -273,16 +286,17 @@
   <h2>Your choices</h2>
   <div class="card">
     <ul>
-      <li><strong>Turn off online Sous Chef estimates</strong> in Settings (in
-        the beta, under Developer → Sous Chef estimates). Nothing is sent to the AI
-        service afterwards.</li>
+      <li><strong>Turn off online Sous Chef estimates</strong> in Settings →
+        Sous Chef → Estimate online. Nothing is sent to the AI service
+        afterwards.</li>
       <li><strong>Don’t scan or search</strong> if you’d rather nothing go to
         Open Food Facts; you can enter any food by hand.</li>
       <li><strong>Limit Apple Health access</strong> in the Health app or iOS
         Settings → Health. MacSalad works without it.</li>
       <li><strong>Turn off iCloud</strong> for MacSalad in iOS Settings to keep
         your diary on this iPhone only.</li>
-      <li><strong>Delete your data:</strong> swipe away today’s meals; delete the
+      <li><strong>Delete your data:</strong> swipe away today’s meals; clear
+        Sous Chef chats in Settings → Sous Chef → Clear Chat History; delete the
         app to remove everything on this iPhone; delete MacSalad’s iCloud data
         from your iCloud storage settings; and delete its Health data in the
         Health app (your profile → Apps → MacSalad).</li>
